@@ -1,0 +1,6 @@
+A equipe escolheu o Power BI como ferramenta de visualização de dados do projeto. O Power BI é uma plataforma de Business Intelligence da Microsoft que permite transformar dados em dashboards interativos e relatórios, facilitando a análise das informações e ajudando na tomada de decisão. Ele foi escolhido porque resolve o principal problema da CorpTech, que é a dificuldade de analisar os dados registrados no Jira Service Management, já que atualmente é necessário exportar relatórios manualmente em arquivos CSV. Com a integração direta ao Azure SQL Database e ao ambiente do Microsoft Azure, o Power BI permite criar dashboards que são atualizados automaticamente, mostrando indicadores como SLA, backlog de chamados, MTTR, MTTA e CSAT. Assim, a gestão passa a ter uma visão mais clara e quase em tempo real da operação de suporte. Outras ferramentas consideradas foram o Metabase e o Streamlit, porém o Metabase possui menos recursos analíticos e integração corporativa, enquanto o Streamlit exige desenvolvimento manual em Python e não é focado especificamente em Business Intelligence.
+
+Referências: 
++ Power BI: https://learn.microsoft.com/pt-br/power-bi/fundamentals/power-bi-overview 
++ Streamlit: https://docs.streamlit.io 
++ Metabase: https://www.metabase.com/docs/latest/

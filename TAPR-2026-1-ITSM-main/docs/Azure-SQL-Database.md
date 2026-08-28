@@ -1,0 +1,3 @@
+É um banco de dados relacional que funciona totalmente na nuvem com foco em otimização e administração de atividades e por ser relacional impacta diretamente no tipo de serviço que precisamos administrar. Ele faz chamados, analistas, SLAs, métricas calculadas e histórico de status. Precisamos muito de um banco relacional pois teremos que lidar com as KPI’s e teremos que fazer muitos JOINs entre tabelas e por conectar nativamente com o Power BI ele foi a escolha certa. Uma alternativa seria o RDS da AWS, porém não tem conexão nativa com o Power Bi.
+
+Referência: https://learn.microsoft.com/pt-br/azure/azure-sql/database/sql-database-paas-overview

@@ -1,0 +1,3 @@
+Funciona como um storage, porém na nuvem ele é otimizado para guardar grandes quantidade de arquivos. Vai ser usado para guardar arquivos “Raw”, basicamente vai armazenar JSON bruto e arquivos alterados, para que haja a possibilidade de alteração de lógica de programação caso o projeto precise ser alterado. Uma alternativa seria usar o AWS S3, que acaba tendo planos e custos um pouco diferentes. Mas como optamos por usarmos as ferramentas da Microsoft, fazer tudo usando a mesma plataforma de nuvem acaba sendo mais viável para a longevidade do projeto.  
+
+Referência: https://learn.microsoft.com/pt-br/azure/storage/blobs/storage-blobs-introduction
