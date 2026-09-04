@@ -1,0 +1,160 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Arquitetura Azure Functions" id="HQCt2SJR_-9Qw1l9dgQN">
+    <mxGraphModel dx="2049" dy="1184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=2;dashed=1;dashPattern=8 6;fillColor=none;verticalAlign=top;align=left;fontColor=light-dark(#2F41CC,#2F41CC);" value="" vertex="1">
+          <mxGeometry height="520" width="1440" x="30" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=20;fontColor=light-dark(#2F41CC,#2F41CC);spacingLeft=18;spacingTop=10;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Aplicação Azure Functions&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;&quot;&gt;[Runtime: Python / Azure Functions]&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="330" x="47" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E7FA;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=13;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Gatilho de Timer&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font&gt;[Componente: Azure Functions TimerTrigger]&lt;/font&gt;&lt;br&gt;&lt;br&gt;Executa&amp;nbsp;&lt;br&gt;a cada 5 minutos." vertex="1">
+          <mxGeometry height="110" width="330" x="220" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;dashed=1;dashPattern=5 4;fillColor=#FFFFFF;verticalAlign=top;fontColor=light-dark(#2F41CC,#2F41CC);" value="" vertex="1">
+          <mxGeometry height="330" width="290" x="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Nível 1: sem dependências de FK&lt;/b&gt;" vertex="1">
+          <mxGeometry height="25" width="270" x="110" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E7FA;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=13;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Extrair Fila&lt;/b&gt;&lt;br&gt;&lt;font&gt;[Componente: função Python]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="265" x="112" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E7FA;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=13;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Extrair Categoria&lt;/b&gt;&lt;br&gt;&lt;font&gt;[Componente: função Python]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="265" x="112" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E7FA;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=13;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Extrair SLA&lt;/b&gt;&lt;br&gt;&lt;font&gt;[Componente: função Python]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="265" x="112" y="478" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E7FA;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=13;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Extrair Cliente/Organização&lt;/b&gt;&lt;br&gt;&lt;font&gt;[Componente: função Python]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="265" x="112" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;dashed=1;dashPattern=5 4;fillColor=#FFFFFF;verticalAlign=top;fontColor=light-dark(#2F41CC,#2F41CC);" value="" vertex="1">
+          <mxGeometry height="190" width="280" x="440" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-11" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Nível 2: dependências de Fila / Cliente / &lt;br&gt;Organização&lt;/b&gt;" vertex="1">
+          <mxGeometry height="35" width="260" x="450" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E7FA;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=13;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Extrair Analista&lt;/b&gt;&lt;br&gt;&lt;font&gt;[Componente: função Python]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="255" x="452" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E7FA;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=13;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Extrair Solicitante&lt;/b&gt;&lt;br&gt;&lt;font&gt;[Componente: função Python]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="255" x="452" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;dashed=1;dashPattern=5 4;fillColor=#FFFFFF;verticalAlign=top;fontColor=light-dark(#2F41CC,#2F41CC);" value="" vertex="1">
+          <mxGeometry height="135" width="285" x="770" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-15" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=light-dark(#2F41CC,#2F41CC);labelBorderColor=none;strokeWidth=0;" value="&lt;b&gt;Nível 3: dependências de Fila, Analista, Solicitante,&lt;br&gt;&amp;nbsp;Categoria e Cliente/Organização&lt;/b&gt;" vertex="1">
+          <mxGeometry height="42" width="265" x="780" y="307" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E7FA;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=13;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Extrair Chamado&lt;/b&gt;&lt;br&gt;&lt;font&gt;[Componente: função Python]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="260" x="782" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;dashed=1;dashPattern=5 4;fillColor=#FFFFFF;verticalAlign=top;fontColor=light-dark(#2F41CC,#2F41CC);" value="" vertex="1">
+          <mxGeometry height="260" width="285" x="1100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-18" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Nível 4: dependência de Chamado&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="265" x="1110" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E7FA;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=13;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Extrair SLA do Chamado&lt;/b&gt;&lt;br&gt;&lt;font&gt;[Componente: função Python]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="260" x="1112" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E7FA;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Extrair Histórico de Status do Chamado&lt;/b&gt;&lt;br&gt;&lt;font&gt;[Componente: função Python]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="260" x="1112" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D8E7FA;strokeColor=light-dark(#2F41CC,#2F41CC);strokeWidth=1.5;align=center;verticalAlign=middle;fontSize=12;fontColor=light-dark(#2F41CC,#2F41CC);" value="&lt;b&gt;Extrair Avaliação CSAT do Chamado&lt;/b&gt;&lt;br&gt;&lt;font&gt;[Componente: função Python]&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="260" x="1112" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-24" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#2F41CC);strokeWidth=1.5;endArrow=block;endFill=1;fontColor=light-dark(#2F41CC,#2F41CC);" target="gNlE21GX2LdCF4B5Dh7h-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-25" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#2F41CC);strokeWidth=1.2;endArrow=block;endFill=1;fontSize=11;fontColor=light-dark(#000000,#2F41CC);" target="gNlE21GX2LdCF4B5Dh7h-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-26" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#2F41CC);strokeWidth=1.2;endArrow=block;endFill=1;fontSize=11;fontColor=light-dark(#2F41CC,#2F41CC);" target="gNlE21GX2LdCF4B5Dh7h-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-27" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#000000,#2F41CC);strokeWidth=1.2;endArrow=block;endFill=1;fontSize=11;fontColor=light-dark(#2F41CC,#2F41CC);" target="gNlE21GX2LdCF4B5Dh7h-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-28" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=light-dark(#2F41CC,#2F41CC);endArrow=block;endFill=1;fontColor=light-dark(#2F41CC,#2F41CC);" target="gNlE21GX2LdCF4B5Dh7h-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-29" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=light-dark(#2F41CC,#2F41CC);endArrow=block;endFill=1;fontColor=light-dark(#2F41CC,#2F41CC);" target="gNlE21GX2LdCF4B5Dh7h-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-30" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=light-dark(#2F41CC,#2F41CC);endArrow=block;endFill=1;fontColor=light-dark(#2F41CC,#2F41CC);" target="gNlE21GX2LdCF4B5Dh7h-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-31" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=light-dark(#2F41CC,#2F41CC);endArrow=block;endFill=1;fontColor=light-dark(#2F41CC,#2F41CC);" target="gNlE21GX2LdCF4B5Dh7h-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-32" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=light-dark(#2F41CC,#2F41CC);endArrow=block;endFill=1;fontColor=light-dark(#2F41CC,#2F41CC);" target="gNlE21GX2LdCF4B5Dh7h-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-33" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=light-dark(#2F41CC,#2F41CC);endArrow=block;endFill=1;fontColor=light-dark(#2F41CC,#2F41CC);" target="gNlE21GX2LdCF4B5Dh7h-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-35" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=light-dark(#000000,#2F41CC);strokeWidth=1.2;dashed=1;dashPattern=5 4;endArrow=none;fontColor=light-dark(#2F41CC,#2F41CC);">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245" y="655" />
+              <mxPoint x="721" y="655" />
+            </Array>
+            <mxPoint x="721" y="730.6833752096445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-38" edge="1" parent="1" source="gNlE21GX2LdCF4B5Dh7h-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=light-dark(#000000,#2F41CC);strokeWidth=1.2;dashed=1;dashPattern=5 4;endArrow=none;fontColor=light-dark(#2F41CC,#2F41CC);entryX=0.465;entryY=0.992;entryDx=0;entryDy=0;entryPerimeter=0;" target="gNlE21GX2LdCF4B5Dh7h-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1220" y="655" />
+              <mxPoint x="721" y="655" />
+              <mxPoint x="721" y="785.86" />
+            </Array>
+            <mxPoint x="721" y="730.6833752096445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-39" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=light-dark(#000000,#2F41CC);" value="Extrai&lt;br&gt;todas as funções" vertex="1">
+          <mxGeometry height="40" width="150" x="470" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-40" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=light-dark(#000000,#2F41CC);strokeWidth=1.5;dashed=1;dashPattern=6 4;endArrow=block;endFill=1;fontColor=light-dark(#000000,#2F41CC);entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="gNlE21GX2LdCF4B5Dh7h-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="826" />
+              <mxPoint x="430" y="826" />
+            </Array>
+            <mxPoint x="720" y="780.0000007263457" as="sourcePoint" />
+            <mxPoint x="430" y="956" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-42" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=light-dark(#000000,#2F41CC);strokeWidth=1.5;dashed=1;dashPattern=6 4;endArrow=block;endFill=1;fontColor=light-dark(#2F41CC,#2F41CC);entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="gNlE21GX2LdCF4B5Dh7h-45">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="826" />
+              <mxPoint x="1180" y="826" />
+            </Array>
+            <mxPoint x="720" y="780.0000007263457" as="sourcePoint" />
+            <mxPoint x="1180" y="956" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gNlE21GX2LdCF4B5Dh7h-55" connectable="0" parent="gNlE21GX2LdCF4B5Dh7h-42" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;labelBackgroundColor=none;" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;Carrega&lt;/span&gt;&lt;br style=&quot;font-size: 11px;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;todas as funções&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2441" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Banco de Dados de Origem" c4Type="Container: Azure SQL Database" c4Technology="" c4Description="Réplica operacional&#xa;dos dados do sistema." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" id="gNlE21GX2LdCF4B5Dh7h-44">
+          <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=none;fontSize=12;fontColor=light-dark(#2F41CC,#2F41CC);align=center;strokeColor=light-dark(#2F41CC,#2F41CC);metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
+            <mxGeometry height="120" width="240" x="310" y="910" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Banco de Dados de Destino" c4Type="Container: Azure SQL Database" c4Technology="" c4Description="Base analítica consumida&#xa;pelo Power BI." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font&gt;%c4Description%&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" id="gNlE21GX2LdCF4B5Dh7h-45">
+          <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=none;fontSize=12;fontColor=light-dark(#2F41CC,#2F41CC);align=center;strokeColor=light-dark(#2F41CC,#2F41CC);metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
+            <mxGeometry height="120" width="240" x="1060" y="910" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
