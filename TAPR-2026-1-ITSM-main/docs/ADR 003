@@ -1,0 +1,7 @@
+# ADR 003: SQL Server como base analítica 
+**Status:** Aceito |  **Data:** 27-08-2026  |  **Autores:** Clara Meister Martinovsky
+**Contexto:** A CorpTech precisa manter os dados do ITSM fora do JSM para possibilitar 
+histórico e análises. 
+**Decisão:** Utilizar SQL Server como banco de destino dos dados extraídos. 
+**Consequências:** 
++ Permite armazenamento estruturado e consultas analíticas. -- Necessita gerenciamento e manutenção do banco. 
